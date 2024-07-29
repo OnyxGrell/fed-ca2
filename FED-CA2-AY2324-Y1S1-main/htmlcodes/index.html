@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saving the Earth</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><!--bootstrap icons cdn-->
+  <link rel="icon" href="../Icons/globe_global_web_internet_international_earth_eco_icon_252571.png"> <!--image from https://icon-icons.com/-->
+  <link rel="stylesheet" href="../csscodes/stylesheets.css">
+  <script src="../javascript/index.js" defer></script>
+</head>
+<body>
+  
+  <!--navbar code -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3"> <!--expand on large, hamburger icon if breakpoint smaller than large-->
+    <div class="container">
+      
+      <a href="../htmlcodes/index.html" class="navbar-brand"><img src="../Images/undraw_sweet_home_dkhr.svg" alt="Bootstrap" width="100" height="40"></a> <!--img src https://undraw.co/illustrations-->
+      <div class="text-white" id="time"> Date: 11/8/2021<br> Time: 2:45:12 p.m.</div> <!--need use defer-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navmenu"> 
+        <ul class="navbar-nav ms-auto"> <!--msauto push it towards the right-->
+          <li class="nav-item">
+            <a href="../htmlcodes/savingtheearth.html" class="nav-link">Saving the earth</a>
+          </li>
+          <li class="nav-item">
+            <a href="../htmlcodes/whatsphasdone.html" class="nav-link">What SP has done</a>
+          </li>
+          <li class="nav-item">
+            <a href="../htmlcodes/feedback.html" class="nav-link">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    
+    </div>
+  </nav>
+
+  <!--Showcase-->
+  <header>
+    <article class="bg-dark text-light p-5 p-lg-4 pt-lg-5 text-center text-sm-start"> <!--when sm screen, align towards the left-->
+      <div class="container">
+          
+        <div class="d-sm-flex align-items-center justify-content-between"> <!--flexbox at sm breakpoint, center all the text items and make a space between the text and img-->
+            
+          <div>
+            <h2>Chia Le Hi DISM 1A/04</h2>
+            <p class="lead fs-4">Welcome to my page! You are currently on the home page.</p>
+            <p class="lead fs-4">Please scroll down to find some interesting facts about me!</p>
+          </div>
+            
+          <img class="img-fluid w-50 d-none d-sm-block" src="../Images/undraw_playful_cat_re_ac9g.svg" alt="cat"> <!--img src https://undraw.co/illustrations--> <!--when sm img disappear-->
+        </div>
+        
+      </div>
+    </article>
+  </header>
+
+  <!--What is their name-->
+  <section class="backgroundColorName text-secondary p-5">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        
+        <h3 class="mb-3 mb-md-0 h3Color col-lg-4" id="greetingHeading">What is your name?</h3>   
+               
+        <div class="input-group">
+          <input type="text" id="nameInput" class="form-control" placeholder="Enter your name">
+          <button class="btn btn-dark btn-lg btn-md" onclick="changeGreeting()" type="button">Enter</button> <!--ca;l changeGreeting function on click-->
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <!--about me section-->
+  <section class="p-5 aboutMeColor">
+    <div class="container">
+      <!-- Fontweight normal,text center and display size 2 -->
+      <h2 class="text-center display-2 fw-normal">About Me</h2>
+      <hr class="endingline mt-0 ">
+      
+      <div class="row text-center">
+        <!--first card-->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 mr-4">
+          <div class="card bg-dark text-light h-100"> <!--h-100 to keep the cards height the same-->
+            <!-- if images aligned, picture quality will decreased, therefore just align the card -->
+            <img src="../Images/personality.png" class="card-img-top img-fluid rounded h-100" alt="personalityImage"> <!--image source: https://venngage.com/templates/social-media/infj-personality-type-instagram-post-023c121d-f46c-467c-8b3b-103f1f8d22f8-->
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold text-decoration-underline">My Personality</h5>
+                <p class="card-text">I am a person with more introverted and observant personality traits. I am also a open minded and flexible person who's always open to any new idea from anyone.</p>              
+              </div>
+          </div>
+        </div>
+        <!--second card-->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 mr-4">
+          <div class="card bg-dark text-light h-100">
+            <img src="../Images/gympicture.jpg" class="card-img-top img-fluid rounded h-100" alt="gymImage"> <!--image from https://www.top-rated.online/cities/Singapore/place/p/8523401/Anytime+Fitness-->
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold text-decoration-underline">Working out</h5>
+                <p class="card-text">I enjoy working out around 4-5x a week as the effort and hard work you put in the gym will always yield fruitful results. I also met the majority of my friends through the gym, which helped me make a lot of close friendships I hold dear.</p>              
+              </div>
+
+          </div>
+        </div>
+        <!-- third card -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 mr-4">
+          <div class="card bg-dark text-light h-100">
+            <img src="../Images/miketyson.jpg" class="card-img-top img-fluid rounded h-100" alt="valuesImage"> <!--image source: https://www.amazon.in/Tallenge-Discipline-Medium-Poster-Framed/dp/B07R4WRX4C-->
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold text-decoration-underline">My Values</h5>
+                <p class="card-text">I believe in Discipline, Respect and Hard Work. One of my favourite quotes from Mike Tyson about discipline is "Discipline is doing what you hate to do. But doing it like you love it.</p>              
+              </div>
+              
+          </div>
+        </div>
+        
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- responsivetable -->
+  <section class="p-5">
+    
+    <div class="container">
+      <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+        <div class="card-body">
+          <h5 class="card-title">My Education Journey</h5>
+          
+          <div class="card-text">
+            <div class="table-responsive"> <!--horizontal scrolling at sm breakpoint-->
+              <table class="table table-hover table-bordered">
+                
+                <tbody>
+                  <tr>
+                    <th scope="row">2013-2018</th>
+                    <td>Pioneer Primary School</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">2019 - 2022</th>
+                    <td>Hua Yi Secondary School</td>  
+                  </tr>
+
+                  <tr>
+                    <th scope="row">2023 - present</th>
+                    <td>Singapore Polytechnic</td>  
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="card mt-5 shadow p-3 mb-5 bg-body-tertiary rounded">
+        <div class="card-body">
+          <h5 class="card-title">My O-Level Grades</h5>
+          
+          <div class="card-text">
+            <div class="table-responsive"> <!--horizontal scrolling at sm breakpoint-->
+              <table class="table table-hover table-bordered">
+                
+                <tbody>
+
+                  <tr>
+                    <th scope="row">English</th>
+                    <td>B3</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Chinese</th>
+                    <td>A2</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">E-Math</th>
+                    <td>B3</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Comb-Sci(Bio/Chem)</th>
+                    <td>A1</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">DnT</th>
+                    <td>B4</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Pure Geog</th>
+                    <td>A1</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Ss/Hist</th>
+                    <td>A1</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+  <!-- footer -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead mb-0">Copyright &copy; 2023 FED Project p2322753</p>
+        </div>
+        <div class="col-md-6">
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i> <!--bi is bootstrap icon, need the bi cdn to work-->
+          </a>
+        </div>
+      </div>
+    </div>
+   </footer> 
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>

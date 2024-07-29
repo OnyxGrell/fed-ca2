@@ -1,0 +1,104 @@
+/* smooth scrolling */
+.html {
+  scroll-behavior: smooth;
+}
+
+.backgroundColorName {
+  background-color: #e6c8e6;
+}
+
+.h3Color {
+  color:#333333
+}
+
+.endingline {
+  border-top: 2px solid;
+}
+
+.aboutMeColor {
+  background-color: rgb(235, 235, 235);
+}
+
+.savingTheEarth {
+  background-color: #c8e6c8;
+}
+
+.cardColorEarth {
+  background-color: rgb(235,236,235);
+}
+/* only the img in the card will hover, not the card */
+.card.boxShadowHover img:hover {
+  box-shadow: 5px 10px 18px #888888;
+  transition: 0.3s;
+}
+
+.modalButtonEarth:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.spColorOne {
+  background-color: rgb(141, 255, 255);
+}
+
+.bgColorEnviromentClub {
+  background-color: rgb(149, 148, 153);
+}
+
+/* Custom CSS to change the carousel control arrows to dark color */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #1d1c1c; /* Change this to your desired dark color */
+}
+/* if i use the .card.boxShadowHover img:hover, it wont work as it only applys to the img in the card. 
+if i edit the code to .boxShadowHover, my save the earth card will hover all together not just the picture. Thus i have to create a seperate css just for ths*/
+.imgShadowHover:hover{
+  box-shadow: 5px 10px 18px #888888;
+  transition: 0.3s
+}
+/* sp logo ensure all the images are the same dimensions throughout */
+.logo {
+  height: 6.25em;
+  width: 6.25em;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.lightGreyBorder {
+  border: 1px solid rgb(121, 121, 124);
+  border-radius: 5px;
+}
+
+.logoBackground {
+  background-color: #C6E6D1;
+}
+
+.goGreenBackground {
+  background-color: #ddfae7;
+}
+
+.spPledgeBackground {
+  background-color: #D6E4F0;
+}
+
+.formColor {
+  background-color: #F6F7Fc;
+}
+/* just for laughs */
+.fatCat:hover { 
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+.formLabel {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.lightBorder {
+  border: 1px solid #cde4da;
+  border-radius: 5px;
+}
